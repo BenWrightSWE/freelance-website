@@ -7,7 +7,8 @@
     --headerNavBackgroundColor: #E7D6C6;
     --headerNavButtonColor: #D4D6D5;
     --footerBackgroundColor: #474747;
-    --textColor: #474747;
+    --headerTextColor: #474747;
+    --bodyTextColor: #e6e1d5;
 }
 
 *, *::before *::after {
@@ -55,6 +56,7 @@ header {
         border: none;
         padding: .1em .5em .2em .5em;
         font-size: 3.2em;
+        color: var(--headerTextColor);
     }
 
     header picture {
@@ -94,7 +96,7 @@ header {
     header nav a {
         font-size: 4em;
         text-decoration: none;
-        color: var(--textColor);
+        color: var(--headerTextColor);
     }
 
     .header-nav-links {
@@ -150,7 +152,7 @@ footer {
     .footer-nav-links a {
         text-decoration: none;
         color: #D4D6D5;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .footer-nav-button {

@@ -1,3 +1,95 @@
-main picture {
+/* MOBILE */
+
+main {
+    color: var(--bodyTextColor);
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#banner img {
+    max-width: 200%; /* can adjust depending on your banner */
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    padding: 2.5em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#services article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+}
+
+#services img {
+    max-width: 100%;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.price-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 3em;
+    background-color: var(--headerNavButtonColor);
+}
+
+.price-option picture img {
+    max-width: 100%;
+}
+
+#about-us picture {
     display: none;
+}
+
+/* LARGE MOBILE */
+
+@media only screen and (min-width: 32em) {
+
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 48em) {
+
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 64em) {
+
+    #banner {
+        display: inherit;
+    }
+
 }
