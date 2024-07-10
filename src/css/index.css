@@ -1,4 +1,8 @@
-/* MOBILE */
+
+/* Could be nice to add another break point between the tablet and desktop mode.
+   There just seems to be too much disparity between those two sizes. */
+
+/* MOBILE  340px*/
 
 main {
     color: var(--bodyTextColor);
@@ -32,6 +36,10 @@ p {
     font-size: 1.5em;
 }
 
+img {
+    border-radius: 2em;
+}
+
 #services {
     display: flex;
     flex-direction: column;
@@ -62,34 +70,122 @@ p {
     gap: 1em;
     padding: 3em;
     background-color: var(--headerNavButtonColor);
+    border-radius: 1em;
 }
 
 .price-option picture img {
     max-width: 100%;
 }
 
+.price-option button {
+    background-color: var(--headerNavBackgroundColor);
+    padding: .5em 1em .5em 1em;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px #474747;
+}
+
+.price-option a {
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--headerTextColor);
+    font-family: Oswald;
+}
+
+#about-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+}
+
 #about-us picture {
     display: none;
 }
 
-/* LARGE MOBILE */
+/* LARGE MOBILE 512px */
 
 @media only screen and (min-width: 32em) {
 
+    #main-content {
+        padding: 3.5em;
+    }
+
+    h3 {
+        font-size: 2.75em;
+    }
+
+    p {
+        font-size: 1.85em;
+    }
+
+    .price-option button {
+        padding: .75em 1.75em .75em 1.75em;
+    }
+
+    .price-option a {
+        font-size: 3em;
+    }
+
 }
 
-/* TABLET */
+/* TABLET 768px */
 
 @media only screen and (min-width: 48em) {
 
+    #main-content {
+        padding: 3em;
+    }
+
+    #services p {
+        margin: 0 2em 0 2em;
+    }
+
+    #pricing {
+        flex-direction: row;
+    }
+
+    .price-option button {
+        padding: .65em 1.65em .65em 1.65em;
+    }
+
+    .price-option a {
+        font-size: 2.5em;
+    }
+
+    #about-us picture {
+        display: inherit;
+    }
+
 }
 
-/* DESKTOP */
+/* MID-STEP BREAK POINT FOR SIZING 896px */
+
+@media only screen and (min-width: 56em) {
+
+    #services article {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #services .reversed-service {
+        flex-direction: row-reverse;
+    }
+
+    #services picture {
+        width: 75%;
+    }
+
+    #services img {
+        width: 100%;
+    }
+
+}
+
+/* DESKTOP 1024px */
 
 @media only screen and (min-width: 64em) {
 
-    #banner {
-        display: inherit;
-    }
+
 
 }

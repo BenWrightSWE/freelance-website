@@ -8,7 +8,7 @@
     --headerNavButtonColor: #D4D6D5;
     --footerBackgroundColor: #474747;
     --headerTextColor: #474747;
-    --bodyTextColor: #e6e1d5;
+    --bodyTextColor: #363535;
 }
 
 *, *::before *::after {
@@ -25,7 +25,7 @@ html {
     font-size: 62.5%;
 }
 
-/* Mobile */
+/* Mobile 340px */
 
 body {
     background-color: var(--bodyBackgroundColor);
@@ -183,6 +183,7 @@ footer {
     .contact-us-info {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .info-spacing {
@@ -322,6 +323,7 @@ footer {
 
     .contact-us-info {
         flex-direction: row;
+        font-size: .8em;
         gap: 1em;
     }
 
@@ -402,6 +404,10 @@ footer {
         transform: translateY(10%);
     }
 
+    /* MAIN DESKTOP */
+
+    /* FOOTER DESKTOP */
+
     .footer-nav-links:hover {
         color: #d03f2c;
         -webkit-transition: color 500ms linear;
@@ -423,6 +429,10 @@ footer {
         transform: translateY(10%);
     }
 
+    .contact-us-info {
+        font-size: 1em;
+    }
+
     .fa {
         -webkit-transition: transform 1s;
         -moz-transition: transform 1s;
@@ -435,9 +445,5 @@ footer {
         transform: translateY(10%);
         opacity: 70%;
     }
-
-    /* MAIN DESKTOP */
-
-    /* FOOTER DESKTOP */
 
 }
