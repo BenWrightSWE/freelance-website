@@ -360,48 +360,13 @@ footer {
 
     .header-buttons {
         font-size: 4em;
-        -webkit-transition: transform 1s;
-        -moz-transition: transform 1s;
-        -ms-transition: transform 1s;
-        -o-transition: transform 1s;
-        transition: transform 1s;
-    }
-
-    .header-buttons:hover {
-        transform: translateY(10%);
-    }
-
-    /*#switch-up {
-        display: inline-block;
-        -webkit-transition: transform 1s;
-        -moz-transition: transform 1s;
-        -ms-transition: transform 1s;
-        -o-transition: transform 1s;
-        transition: transform 1s;
-    }*/
-
-    .header-buttons {
         cursor: pointer;
-    }
-
-    header nav a:hover {
-        color: #d03f2c;
-        -webkit-transition: color 500ms linear;
-        -moz-transition: color 500ms linear;
-        -ms-transition: color 500ms linear;
-        -o-transition: color 500ms linear;
-        transition: color 500ms linear;
     }
 
     header nav button {
         margin: 0;
         padding: 1em 2.5em 1em 2.5em;
         font-size: 1em;
-        transition: transform 1s;
-    }
-
-    header nav button:hover {
-        transform: translateY(10%);
     }
 
     /* MAIN DESKTOP */
@@ -417,23 +382,21 @@ footer {
         transition: color 500ms linear;
     }
 
-    .footer-nav-button {
-        -webkit-transition: transform 1s;
-        -moz-transition: transform 1s;
-        -ms-transition: transform 1s;
-        -o-transition: transform 1s;
-        transition: transform 1s;
-    }
-
-    .footer-nav-button:hover {
-        transform: translateY(10%);
+    .contact-us h3 {
+        font-size: 1.5em;
     }
 
     .contact-us-info {
         font-size: 1em;
     }
 
-    .fa {
+    .fa:hover {
+        opacity: 70%;
+    }
+
+    /* GENERAL */
+
+    .button-drop {
         -webkit-transition: transform 1s;
         -moz-transition: transform 1s;
         -ms-transition: transform 1s;
@@ -441,9 +404,16 @@ footer {
         transition: transform 1s;
     }
 
-    .fa:hover {
+    .button-drop:hover {
         transform: translateY(10%);
-        opacity: 70%;
     }
 
+    .color-change:hover {
+        color: #d03f2c;
+        -webkit-transition: color 500ms linear;
+        -moz-transition: color 500ms linear;
+        -ms-transition: color 500ms linear;
+        -o-transition: color 500ms linear;
+        transition: color 500ms linear;
+    }
 }

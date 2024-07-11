@@ -36,7 +36,7 @@ p {
     font-size: 1.5em;
 }
 
-img {
+#main-content img {
     border-radius: 2em;
 }
 
@@ -180,12 +180,14 @@ img {
         width: 100%;
     }
 
+    #about-us {
+        margin: 0 10em 0 10em;
+    }
+
 }
 
 /* DESKTOP 1024px */
 
 @media only screen and (min-width: 64em) {
-
-
 
 }
