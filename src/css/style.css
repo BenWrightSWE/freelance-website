@@ -226,16 +226,21 @@ footer {
         color: white;
     }
 
-    .copyright {
+    .copyright-legal {
         color: #c0c2c1;
         text-align: center;
     }
 
-    .legal-links a {
+    .copyright-legal p {
+        font-size: 1.2em;
+        margin-bottom: .5em;
+    }
+
+    .copyright-legal a{
+        font-size: 1em;
         text-decoration: none;
-        text-align: center;
+        color: #c0c2c1;
         margin-bottom: 0;
-        color: #b3b5b4;
     }
 
     .hidden-symbols {
@@ -331,12 +336,12 @@ footer {
         display: block;
     }
 
-    .copyright {
+    .copyright-legal p {
         font-size: 1.4em;
     }
 
-    .legal-links {
-        font-size: 1em;
+    .copyright-legal a{
+        font-size: 1.2em;
     }
 }
 
