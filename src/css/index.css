@@ -1,12 +1,5 @@
 
-/* Could be nice to add another break point between the tablet and desktop mode.
-   There just seems to be too much disparity between those two sizes. */
-
 /* MOBILE  340px*/
-
-main {
-    color: var(--bodyTextColor);
-}
 
 #banner {
     display: flex;

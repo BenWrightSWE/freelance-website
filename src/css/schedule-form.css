@@ -1,0 +1,45 @@
+
+/* MOBILE  340px*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+#form-description {
+    font-size: 2em;
+}
+
+form {
+
+}
+
+form section {
+
+}
+
+#form-contact-info {
+
+}
+
+#form-plan-details {
+    display: none;
+}
+
+#form-schedule {
+    display: none;
+}
+
+/* LARGE MOBILE 512px */
+
+/* TABLET 768px */
+
+/* MID-STEP BREAK POINT FOR SIZING 896px */
+
+/* DESKTOP 1024px */

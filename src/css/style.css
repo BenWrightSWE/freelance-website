@@ -116,6 +116,7 @@ header {
 main {
     min-height: 150em;
     font-family: Playfair;
+    color: var(--bodyTextColor);
 }
 
 /* FOOTER MOBILE */

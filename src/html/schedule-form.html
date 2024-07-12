@@ -33,11 +33,11 @@
         </header>
         <main>
             <h1>Schedule Now!</h1>
-            <p>This form allows you to schedule an appointment with general corp.
+            <p id="form-description">This form allows you to schedule an appointment with general corp.
                 It presents the opprotunity to let us understand what you need before
                 we meet about it.</p>
             <form id="schedule-form" action="" method="POST">
-                <section>
+                <section id="form-contact-info">
                     <h2>Contact Information</h2>
                     <div>
                         <div>
@@ -61,7 +61,7 @@
                     </div>
                     <!-- Add next and previous buttons -->
                 </section>
-                <section>
+                <section id="form-plan-details">
                     <h2>Plan and Details</h2>
                     <div>
                         <div>
@@ -83,12 +83,23 @@
                     </div>
                     <!-- Add next and previous buttons -->
                 </section>
-                <section>
+                <section id="form-schedule">
                     <!-- Make 2 buttons to choose which week -->
                     <!-- Make 5 buttons for each day of the week -->
                     <!-- Make the times you'd like it to be available to choose from -->
                     <!-- Add captcha and form submit -->
                 </section>
+                <div>
+                    <span>Contact Info</span>
+                    <span>&#8594;</span>
+                    <span>Plan & Details</span>
+                    <span>&#8594;</span>
+                    <span>Schedule Date</span>
+                </div>
+                <div>
+                    <button>&#8592; Previous</button>
+                    <button>Next &#8594;</button>
+                </div>
             </form>
         </main>
         <footer>
