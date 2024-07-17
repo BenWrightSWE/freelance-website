@@ -25,41 +25,44 @@
             </section>
             <nav id="header-nav">
                 <a class="header-nav-links color-change" href="../../index.html">Home</a>
-                <a class="header-nav-links color-change" href="../../index.html/#services">Services</a>
-                <a class="header-nav-links color-change" href="../../index.html/#pricing">Pricing</a>
-                <a class="header-nav-links color-change" href="../../index.html/#about-us">About Us</a>
+                <a class="header-nav-links color-change" href="../../#services">Services</a>
+                <a class="header-nav-links color-change" href="../../#pricing">Pricing</a>
+                <a class="header-nav-links color-change" href="../../#about-us">About Us</a>
                 <button class="button-drop"><a href="schedule-form.html">Schedule</a></button>
             </nav>
         </header>
         <main>
-            <h1>Schedule Now!</h1>
-            <p id="form-description">This form allows you to schedule an appointment with general corp.
+            <section id="pre-form">
+                <h1>Schedule Now!</h1>
+                <p id="form-description">This form allows you to schedule an appointment with general corp.
                 It presents the opprotunity to let us understand what you need before
                 we meet about it.</p>
+            </section>
             <form id="schedule-form" action="" method="POST">
                 <section id="form-contact-info">
                     <h2>Contact Information</h2>
-                    <div>
-                        <div>
-                            <label for="fname">First Name: </label>
-                            <input type="text" id="fname" name="fname" value="First Name">
+                    <div class="form-input">
+                        <div class="fci-question-line">
+                            <div>
+                                <label for="fname">First Name: </label>
+                                <input type="text" id="fname" name="fname" value="First Name">
+                            </div>
+                            <div>
+                                <label for="lname">Last Name: </label>
+                                <input type="text" id="lname" name="lname" value="Last Name">
+                            </div>
                         </div>
-                        <div>
-                            <label for="lname">Last Name: </label>
-                            <input type="text" id="lname" name="lname" value="Last Name">
+                        <div class="fci-question-line">
+                            <div>
+                                <label for="email">Email: </label>
+                                <input type="email" id="email" name="email" value="GeneralCorp@gmail.com">
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number: </label>
+                                <input type="tel" id="phone" name="phone" value="(123) 456-789">
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <label for="email">Email: </label>
-                            <input type="email" id="email" name="email" value="GeneralCorp@gmail.com">
-                        </div>
-                        <div>
-                            <label for="phone">Phone Number: </label>
-                            <input type="tel" id="phone" name="phone" value="(123) 456-789">
-                        </div>
-                    </div>
-                    <!-- Add next and previous buttons -->
                 </section>
                 <section id="form-plan-details">
                     <h2>Plan and Details</h2>
@@ -89,16 +92,16 @@
                     <!-- Make the times you'd like it to be available to choose from -->
                     <!-- Add captcha and form submit -->
                 </section>
-                <div>
+                <div id="form-progress">
                     <span>Contact Info</span>
                     <span>&#8594;</span>
                     <span>Plan & Details</span>
                     <span>&#8594;</span>
                     <span>Schedule Date</span>
                 </div>
-                <div>
-                    <button>&#8592; Previous</button>
-                    <button>Next &#8594;</button>
+                <div id="form-buttons">
+                    <button id="form-prev" type="button">&#8592; Previous</button>
+                    <button id="form-next" type="button">Next &#8594;</button>
                 </div>
             </form>
         </main>

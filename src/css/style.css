@@ -9,6 +9,7 @@
     --footerBackgroundColor: #474747;
     --headerTextColor: #474747;
     --bodyTextColor: #363535;
+    --formBackground: #c7c7c7;
 }
 
 *, *::before *::after {
@@ -114,7 +115,6 @@ header {
 /* MAIN MOBILE */
 
 main {
-    min-height: 150em;
     font-family: Playfair;
     color: var(--bodyTextColor);
 }

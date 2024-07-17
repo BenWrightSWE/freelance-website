@@ -1,50 +1,24 @@
-var isDay: boolean = true;
-var root = document.querySelector(':root');
+import {nextSlide, prevSlide, showCISlide, showPDSlide, showSSlide} from "./form.ts";
+import {openCloseNav, colorSwitch, buttonSwitch} from "./general.ts"
+
+let isDay: boolean = true;
+let formSlide: number = 0;
 
 document.getElementById("nav-button").addEventListener("click", openCloseNav);
 document.getElementById("night-mode-button").addEventListener("click", dayNight);
+document.getElementById("form-prev").addEventListener("click", callPrevSlide);
+document.getElementById("form-next").addEventListener("click", callNextSlide);
 
-function openCloseNav() {
-    let closedNav = document.getElementById("hidden-closed-nav").innerHTML;
-
-    if (closedNav == document.getElementById("nav-button").innerHTML) {
-        document.getElementById("nav-button").innerHTML = "&#9932";
-        document.getElementById("header-nav").style.display="flex";
-    } else {
-        document.getElementById("nav-button").innerHTML = "&#9776";
-        document.getElementById("header-nav").style.display="none";
-    }
+function callPrevSlide(): void {
+    formSlide = prevSlide(formSlide);
 }
 
-function dayNight(){
-    buttonSwitch();
-    colorSwitch();
+function callNextSlide(): void {
+    formSlide = nextSlide(formSlide);
 }
 
-function buttonSwitch() {
-    if (isDay == true) {
-        document.getElementById("switch-up").style.transform="translateY(-50%)";
-        isDay = false;
-    } else {
-        document.getElementById("switch-up").style.transform="translateY(0%)";
-        isDay = true;
-    }
+function dayNight(): void {
+    isDay = buttonSwitch(isDay);
+    colorSwitch(isDay);
 }
 
-function colorSwitch() {
-    if (isDay == false) {
-        root.style.setProperty("--bodyBackgroundColor", "#6D5D6E");
-        root.style.setProperty("--headerBackgroundColor", "#393646");
-        root.style.setProperty("--headerNavBackgroundColor", "#4F4557");
-        root.style.setProperty("--headerNavButtonColor", "#424242");
-        root.style.setProperty("--headerTextColor", "#F4EEE0");
-        root.style.setProperty("--bodyTextColor", "#e6e1d5");
-    } else {
-        root.style.setProperty("--bodyBackgroundColor", "#EEE9E3");
-        root.style.setProperty("--headerBackgroundColor", "#C5A586");
-        root.style.setProperty("--headerNavBackgroundColor", "#E7D6C6");
-        root.style.setProperty("--headerNavButtonColor", "#D4D6D5");
-        root.style.setProperty("--headerTextColor", "#474747");
-        root.style.setProperty("--bodyTextColor", "#363535");
-    }
-}
